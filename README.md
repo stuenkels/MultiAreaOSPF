@@ -2,7 +2,7 @@
 
 ## Topology
 <p align="center">
-    <img src="./images/Topology.svg" align:center>
+    <img src="./images/Topology.svg" width="75%">
 </p>
 
 ## IP Address Configuration
