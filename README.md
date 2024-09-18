@@ -24,4 +24,3 @@ Success rate is 100 percent (5/5), round-trip min/avg/max = 3/4/5 ms
 * Cisco 3560 POE-38 running C3560-IPSERVICESK9-M Version 12.2(44)SE5
     * Version must be of IP Services, OSPF is not supported in IP Base
 #
-
