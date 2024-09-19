@@ -55,7 +55,7 @@ Success rate is 100 percent (5/5), round-trip min/avg/max = 3/4/5 ms
 ``` 
 
 #
-### IPv4 Routing Table from Router5
+### IPv4 OSPF Routing Table from Router5
 ```
 Router5#show ip route ospf
 Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
@@ -82,7 +82,7 @@ O IA     30.0.0.0 [110/75] via 20.0.0.2, 00:01:22, GigabitEthernet0/0/1
 ### IPv6 Routing Table from Router5
 ```
 Router5#show ipv6 route ospf
-IPv6 Routing Table - default - 10 entries
+IPv6 OSPF Routing Table - default - 10 entries
 Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
        B - BGP, R - RIP, I1 - ISIS L1, I2 - ISIS L2
        IA - ISIS interarea, IS - ISIS summary, D - EIGRP, EX - EIGRP external

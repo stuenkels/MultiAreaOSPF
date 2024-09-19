@@ -1,0 +1,56 @@
+IPv4:
+
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 6 subnets, 3 masks
+O        10.0.0.0/30 [110/62] via 30.0.0.2, 00:23:31, Serial0/1/0
+O IA     10.0.0.4/30 [110/74] via 30.0.0.2, 00:23:26, Serial0/1/0
+O IA     10.0.0.8/30 [110/75] via 30.0.0.2, 00:19:59, Serial0/1/0
+C        10.1.1.0/24 is directly connected, Loopback0
+L        10.1.1.1/32 is directly connected, Loopback0
+O IA     10.2.2.2/32 [110/77] via 30.0.0.2, 00:19:45, Serial0/1/0
+      20.0.0.0/30 is subnetted, 1 subnets
+O IA     20.0.0.0 [110/76] via 30.0.0.2, 00:19:59, Serial0/1/0
+      30.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        30.0.0.0/30 is directly connected, Serial0/1/0
+L        30.0.0.1/32 is directly connected, Serial0/1/0
+
+IPv6:
+
+IPv6 Routing Table - default - 10 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, R - RIP, I1 - ISIS L1, I2 - ISIS L2
+       IA - ISIS interarea, IS - ISIS summary, D - EIGRP, EX - EIGRP external
+       ND - ND Default, NDp - ND Prefix, DCE - Destination, NDr - Redirect
+       O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2, a - Application
+O   2001:DB8::/64 [110/62]
+     via FE80::227:90FF:FED5:F800, Serial0/1/0
+OI  2001:DB8:1::/64 [110/74]
+     via FE80::227:90FF:FED5:F800, Serial0/1/0
+C   2001:DB8:1:1::/64 [0/0]
+     via Loopback0, directly connected
+L   2001:DB8:1:1::1/128 [0/0]
+     via Loopback0, receive
+OI  2001:DB8:2::/64 [110/75]
+     via FE80::227:90FF:FED5:F800, Serial0/1/0
+OI  2001:DB8:2:2::2/128 [110/76]
+     via FE80::227:90FF:FED5:F800, Serial0/1/0
+C   2001:DB8:3::/64 [0/0]
+     via Serial0/1/0, directly connected
+L   2001:DB8:3::1/128 [0/0]
+     via Serial0/1/0, receive
+OI  2001:DB8:20::/64 [110/76]
+     via FE80::227:90FF:FED5:F800, Serial0/1/0
+L   FF00::/8 [0/0]
+     via Null0, receive

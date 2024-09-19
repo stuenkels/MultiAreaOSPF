@@ -1,0 +1,51 @@
+IPv4:
+
+Codes: C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route
+
+Gateway of last resort is not set
+
+     20.0.0.0/30 is subnetted, 1 subnets
+C       20.0.0.0 is directly connected, FastEthernet0/2
+     10.0.0.0/8 is variably subnetted, 5 subnets, 2 masks
+C       10.0.0.8/30 is directly connected, FastEthernet0/1
+O       10.2.2.2/32 [110/2] via 20.0.0.1, 00:20:46, FastEthernet0/2
+O IA    10.0.0.0/30 [110/25] via 10.0.0.9, 00:20:46, FastEthernet0/1
+O IA    10.1.1.1/32 [110/75] via 10.0.0.9, 00:20:46, FastEthernet0/1
+O IA    10.0.0.4/30 [110/13] via 10.0.0.9, 00:20:46, FastEthernet0/1
+     30.0.0.0/30 is subnetted, 1 subnets
+O IA    30.0.0.0 [110/74] via 10.0.0.9, 00:20:47, FastEthernet0/1
+
+IPv6:
+
+IPv6 Routing Table - Default - 10 entries
+Codes: C - Connected, L - Local, S - Static, U - Per-user Static route
+       B - BGP, R - RIP, D - EIGRP, EX - EIGRP external
+       ND - Neighbor Discovery
+       O - OSPF Intra, OI - OSPF Inter, OE1 - OSPF ext 1, OE2 - OSPF ext 2
+       ON1 - OSPF NSSA ext 1, ON2 - OSPF NSSA ext 2
+OI  2001:DB8::/64 [110/25]
+     via FE80::521C:B0FF:FE63:3831, FastEthernet0/1
+OI  2001:DB8:1::/64 [110/13]
+     via FE80::521C:B0FF:FE63:3831, FastEthernet0/1
+OI  2001:DB8:1:1::1/128 [110/74]
+     via FE80::521C:B0FF:FE63:3831, FastEthernet0/1
+C   2001:DB8:2::/64 [0/0]
+     via FastEthernet0/1, directly connected
+L   2001:DB8:2::10/128 [0/0]
+     via FastEthernet0/1, receive
+O   2001:DB8:2:2::2/128 [110/1]
+     via FE80::B6A8:B9FF:FE01:BC61, FastEthernet0/2
+OI  2001:DB8:3::/64 [110/74]
+     via FE80::521C:B0FF:FE63:3831, FastEthernet0/1
+C   2001:DB8:20::/64 [0/0]
+     via FastEthernet0/2, directly connected
+L   2001:DB8:20::2/128 [0/0]
+     via FastEthernet0/2, receive
+L   FF00::/8 [0/0]
+     via Null0, receive
