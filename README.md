@@ -49,7 +49,7 @@ Success rate is 100 percent (5/5), round-trip min/avg/max = 3/4/5 ms
 
 ## Device Overview
 ### Routers
-* 5 Cisco Cisco 4321 ISR running Cisco IOS XE Software, Version 16.09.08 Universal K9
+* 5 Cisco 4321 ISRs running Cisco IOS XE Software, Version 16.09.08 Universal K9
 ### Layer 3 Switch
 * Cisco 3560 POE-38 running C3560-IPSERVICESK9-M Version 12.2(44)SE5
     * Version must be of IP Services, OSPF is not supported in IP Base
